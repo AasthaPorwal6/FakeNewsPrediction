@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <br border="2" class="d1 ">
+        <link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}">
+
+            <p> Fake News Prediction</p>
+
+        </br>
+
+            <button><a href="{{ url_for('defination') }}" target=_self>What is it?</a></button>
+    <button><a href="{{ url_for('necessity') }}" target=_self>Need of it </a></button>
+   <button><a href="{{ url_for('without') }}" target=_self>The risk without it </a></button>
+   <p> 
+    <a href="{{ url_for('predict_page') }}" target="_blank">To predict the news click here</a>
+   </p>
+    </body>
+</html>

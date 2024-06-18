@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: rgb(58, 186, 241);
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            color: #FF9F4A;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fake News Detection</h1>
+    <form action="{{ url_for('make_prediction') }}" method="post">
+        <label for="text">Enter news text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Fake News Prediction?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            background: linear-gradient(to bottom right, #FF9F4A, #FF3C83);
+        }
+        .container {
+            width: 70%; /* Decrease the width of the container */
+            background-color: #fff; /* White background */
+            padding: 40px; /* Add padding */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            text-align: center; /* Center text inside container */
+        }
+        h1 {
+            margin-top: 0; /* Remove top margin for h1 */
+            font-size: 50px; /* Adjust font size */
+            color: rgb(56, 3, 116); /* Adjust text color */
+        }
+        p {
+            font-size: 20px; /* Adjust font size */
+            color: rgba(3, 2, 73, 0.671); /* Adjust text color */
+            font-weight: bolder; /* Bold font weight */
+        }
+        a {
+            background-color: rgb(58, 186, 241); /* Button background color */
+            color: white; /* Button text color */
+            border-radius: 10px; /* Rounded button corners */
+            padding: 10px 20px; /* Button padding */
+            font-size: 20px; /* Button font size */
+            text-decoration: none; /* Remove underline */
+            margin-top: 20px; /* Add space between paragraphs and button */
+            display: inline-block; /* Display button as inline block */
+        }
+        a:hover {
+            color: #FF9F4A; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What is Fake News Prediction?</h1>
+        <p>Fake news prediction is the process of using machine learning and natural language processing techniques to determine the authenticity of news articles or reports. With the proliferation of misinformation and fake news on the internet, fake news prediction systems aim to identify and flag potentially deceptive or misleading content.</p>
+        <p>These systems typically analyze various features of news articles, such as the language used, the sources cited, and the context of the information, to assess the likelihood that the content is fabricated or misleading.</p>
+        <p>By detecting fake news early, these prediction systems can help mitigate the spread of misinformation, promote media literacy, and protect individuals from being misled by false information.</p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        h1 {
+            font-size: 50px;
+            color: rgb(56, 3, 116);
+        }
+        p {
+            font-size: 40px;
+            color: rgba(3, 2, 73, 0.671);
+            font-weight: bolder;
+        }
+        a {
+            background-color: rgb(58, 186, 241);
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        a:hover {
+            color: #FF9F4A;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>{{ prediction }}</p>
+    <a href="/">Go back</a>
+</body>
+</html>
+
+
