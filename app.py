@@ -15,7 +15,7 @@ preprocessor = Preprocessing()
 # Route for the home page (index.html)
 @app.route('/')
 def index():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/whatisit')
 def defination():
